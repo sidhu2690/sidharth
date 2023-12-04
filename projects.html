@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIDHU SER</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding-top: 60px;
+        }
+
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: background-color 5s;
+            height: 40px; /* Adjust the height here */
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 20px;
+            margin-top: 5px; /* Adjust this margin according to your header size */
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #f0f0f0;
+            padding: 2px 0;
+            text-align: center;
+            width: 100%;
+            bottom: 0;
+            z-index: 1000;
+            height: 10px; /* Adjust the height here */
+        }
+
+        .dark-mode body {
+            background-color: #333;
+            color: #f8f8f8;
+        }
+
+        .dark-mode header {
+            background-color: #222;
+        }
+
+        .dark-mode nav ul li a {
+            color: #f8f8f8;
+        }
+
+        .dark-mode footer {
+            background-color: #111;
+            color: #f8f8f8;
+        }
+
+        /* Custom Dark Mode Toggle */
+        .toggle-dark-mode {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+
+        .toggle-dark-mode:hover {
+            color: #333;
+        }
+
+        .sun,
+        .moon {
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+ <ul class="navbar-nav mr-auto">
+    <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
+    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+    <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
+    <li class="nav-item"><a class="nav-link" href="https://sidh2690.github.io/Bio/">Resume</a></li>
+
+</ul>
+
+                    <!-- Add more links here if needed -->
+                </ul>
+                <span class="toggle-dark-mode" onclick="toggleDarkMode()">
+                    <i class="sun fas fa-sun"></i>
+                    <i class="moon fas fa-moon" style="display: none;"></i>
+                </span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- About section -->
+        <section id="about" style="position: relative; z-index: 1;">
+           
+        </section>
+    <section id="projects">
+        <div class="container">
+            <section id="projects" style="padding: 20px 0 40px;">
+                <div class="container">
+                    <h2 style="text-align: center; margin-bottom: 40px;">Projects</h2>
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <a href="project.html" style="text-decoration: none; color: inherit;">
+                                <div class="card mb-3" style="height: 180px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Project Title 1</h4>
+                                        <p class="card-text">
+                                            Description or content of the Project goes here.
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <a href="project2.html" style="text-decoration: none; color: inherit;">
+                                <div class="card mb-3" style="height: 180px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Project Title 2</h4>
+                                        <p class="card-text">
+                                            Description or content of the Project goes here.
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <!-- New Box 1 -->
+                            <a href="project.html" style="text-decoration: none; color: inherit;">
+                                <div class="card mb-3" style="height: 180px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Project Title 3</h4>
+                                        <p class="card-text">
+                                            Description or content of the Project goes here.
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <!-- New Box 2 -->
+                            <a href="project.html" style="text-decoration: none; color: inherit;">
+                                <div class="card mb-3" style="height: 180px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Project Title 4</h4>
+                                        <p class="card-text">
+                                            Description or content of the Project goes here.
+                                        </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Add more Projects using a similar structure -->
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+        <!-- Image set as background -->
+        <div style="background-image: url();
+                    background-size: cover;
+                    background-position: center;
+                    height: 100vh;
+                    position: relative;
+                    z-index: 100;">
+        </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            &copy; 2023 SIDHU SER
+        </div>
+    </footer>
+
+    <script>
+        function toggleDarkMode() {
+            const body = document.body;
+            body.classList.toggle('custom-mode'); // Toggle a class for the custom color scheme
+
+            const sunIcon = document.querySelector('.sun');
+            const moonIcon = document.querySelector('.moon');
+            const mainSection = document.querySelector('main');
+
+            if (body.classList.contains('custom-mode')) {
+                // Custom Mode
+                sunIcon.style.display = 'none';
+                moonIcon.style.display = 'inline-block';
+                mainSection.style.backgroundColor = '#1a1a1a'; // Placeholder dark background color
+                mainSection.style.color = '#ffffff'; // Placeholder light text color
+                // Additional changes for other elements
+            } else {
+                // Light Mode
+                sunIcon.style.display = 'inline-block';
+                moonIcon.style.display = 'none';
+                mainSection.style.backgroundColor = '#ffffff'; // Default light background color
+                mainSection.style.color = '#333333'; // Default dark text color
+                // Reset other elements to default light mode
+            }
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js
