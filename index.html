@@ -102,6 +102,21 @@
         .moon {
             font-size: 24px;
         }
+@keyframes rainbowEffect {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+/* Apply rainbow effect to the text */
+span.rainbow-text {
+    font-weight: bold;
+    background-image: linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
+    background-size: 800% 800%;
+    animation: rainbowEffect 8s linear infinite; /* Adjust the duration of the animation */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
     </style>
 </head>
 
@@ -109,11 +124,13 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
-  <ul class="navbar-nav mr-auto">
+ <ul class="navbar-nav mr-auto">
     <li class="nav-item"><a class="nav-link" href="index.html">About</a></li>
     <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
     <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
     <li class="nav-item"><a class="nav-link" href="https://sidh2690.github.io/Bio/">Resume</a></li>
+    <li class="nav-item"><a class="nav-link" href="links.html.html">Useful Links</a></li>
+
 
 </ul>
                 <span class="toggle-dark-mode" onclick="toggleDarkMode()">
@@ -130,7 +147,7 @@
             <div class="container">
                 <h2>About</h2>
                 <p>
-                    I'm Sidharth SS, an aspiring astrophysicist passionate about uncovering the universe's mysteries through technology-driven research. Currently pursuing my Integrated BS-MS in Physics with a Data Science Minor at IISER Mohali, I am an associate member of SWGO collaboration.
+   I'm <span class="rainbow-text">Sidharth SS</span>, an aspiring astrophysicist passionate about uncovering the universe's mysteries through technology-driven research. Currently pursuing my Integrated BS-MS in Physics with a Data Science Minor at IISER Mohali, I am an associate member of SWGO collaboration.
 
                     My journey involves collaborations with leading scientists like Dr. Tommaso Dorigo and Dr. Angüner, igniting my fascination for scientific discovery.
 
